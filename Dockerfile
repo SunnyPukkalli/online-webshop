@@ -1,6 +1,3 @@
-# OPENJDK AND THEN TOMCAT
-#FROM openjdk:8
-
 # TOMCAT FROM DOCKER HUB
 FROM tomcat:8.5-jdk8
 
