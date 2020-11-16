@@ -19,35 +19,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages="com.medical.shopbackend.dto")
 @EnableTransactionManagement
 public class HibernateConfig {
-
-	// Change the below based on DBMS of Choice
-/*
-	private final static String DATABASE_URL 		= "jdbc:h2:tcp://localhost/~/onlineshop";
-	private final static String DATABASE_DRIVER 	= "org.h2.Driver";
-	private final static String DATABASE_DIALECT 	= "org.hibernate.dialect.H2Dialect";
-	private final static String DATABASE_USERNAME 	= "sa";
-	private final static String DATABASE_PASSWORD 	= "";
-*/	
+	
 
 
-	private final static String DATABASE_URL 		= "jdbc:postgresql://testing.ckpmkzadtbde.ap-south-1.rds.amazonaws.com/testing";
+	private final static String DATABASE_URL   	= "jdbc:postgresql://XXXXXXX/XXXXXXXX";
 	private final static String DATABASE_DRIVER 	= "org.postgresql.Driver";
 	private final static String DATABASE_DIALECT 	= "org.hibernate.dialect.PostgreSQL94Dialect";
-	private final static String DATABASE_USERNAME 	= "testing";
-	private final static String DATABASE_PASSWORD 	= "testing";
-
-/*
-
-	ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
-	private   String DATABASE_URL 		= resourceBundle.getString("DATABASE_URL") ;
-	private   String DATABASE_DRIVER 	= resourceBundle.getString("DATABASE_DRIVER") ;
-	private   String DATABASE_DIALECT 	= resourceBundle.getString("DATABASE_DIALECT") ;
-	private   String DATABASE_USERNAME 	= resourceBundle.getString("DATABASE_USERNAME") ;
-	private   String DATABASE_PASSWORD 	= resourceBundle.getString("DATABASE_PASSWORD") ;
-
-
-*/
-
+	private final static String DATABASE_USERNAME 	= "XXXXX";
+	private final static String DATABASE_PASSWORD 	= "XXXXX";
 
 	// DataSource bean
 	@Bean("dataSource")
